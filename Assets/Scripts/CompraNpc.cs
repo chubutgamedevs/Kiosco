@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CompraNpc : MonoBehaviour
 {
+    private StackKiosco listaItems;
 
     private List<int> ListDinero = new List<int>
     {20,50,100,200,500,1000};
@@ -17,16 +18,27 @@ public class CompraNpc : MonoBehaviour
         }
         return billetera;
     }
-
-
-
-    void Update()
+    private void MuestroDinero()
     {
-        if (Input.GetMouseButtonDown(0))
+        var plataRandom = ObternerDinero(ListDinero, 4);
+        Debug.Log(string.Join(" ,", plataRandom));
+    }
+    public void QuieroLlevar()
+    {
+        listaItems = gameObject.GetComponent<StackKiosco>();
+        /*foreach (var giveItem in listaItems.inventKiosco)
         {
 
-            var plataRandom = ObternerDinero(ListDinero, 4);
-            Debug.Log(string.Join(" ,", plataRandom));
-        }
+        }*/
     }
+    private void Start()
+    {
+        QuieroLlevar();
+        MuestroDinero();
+    }
+    void Update()
+    {
+
+    }
+
 }
