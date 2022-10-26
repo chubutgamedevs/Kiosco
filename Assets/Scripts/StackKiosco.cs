@@ -9,6 +9,7 @@ public class StackKiosco : MonoBehaviour
     public static StackKiosco Instance;
 
 
+
     private void Awake()
     {
         inventKiosco = new List<InventoryItem>();
@@ -45,8 +46,8 @@ public class StackKiosco : MonoBehaviour
             }
         }
     }
-    public List<int> dineroInicial = new List<int>
-    {20,50,100,200,500,1000};
+    private List<int> dineroInicial = new List<int>
+    {1,2,5,10,20,50,100};
     List<int> ObternerDinero(List<int> DineroRandom, int count)
     {
         List<int> caja = new List<int>();
@@ -61,6 +62,7 @@ public class StackKiosco : MonoBehaviour
     {
         var cajaDelDia = ObternerDinero(dineroInicial, 15);
         Debug.Log(string.Join(" ,", cajaDelDia));
+        Debug.Log("Dinero De La caja");
     }
 
 }
