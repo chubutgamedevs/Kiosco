@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Food_0
+      name: Banana
       rect:
         serializedVersion: 2
         x: 3
@@ -137,7 +137,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_1
+      name: Naranja
       rect:
         serializedVersion: 2
         x: 34
@@ -158,7 +158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_2
+      name: Manzana
       rect:
         serializedVersion: 2
         x: 68
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_9
+      name: Queso
       rect:
         serializedVersion: 2
         x: 132
@@ -347,10 +347,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Food_11
+      name: Pan
       rect:
         serializedVersion: 2
-        x: 37
+        x: 38
         y: 70
         width: 21
         height: 20
@@ -652,30 +652,30 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Food_10: -802481925
+      Manzana: 548121943
       Food_23: 1303264658
       Food_3: 748902842
       Food_15: -1907940659
       Leche: -1063974899
-      Food_0: 328121977
+      Naranja: 1093764986
       Food_18: 882227988
-      Food_1: 1093764986
+      Queso: 1470421961
+      Banana: 328121977
       Food_5: -1412605247
       Food_4: 2119766882
       Food_13: -1261700171
       Chcolate: -62662476
       Food_21: -304499445
-      Food_11: -205102395
       Food_20: 1929574899
       Food_6: -895149482
       Food_14: 49136459
       Food_16: -1742943658
       Food_17: -1914414993
+      Pan: -205102395
       Food_7: -1677838808
       Food_8: 1682952030
-      Food_2: 548121943
-      Food_9: 1470421961
-      Food_22: -1427428971
       Food_12: -1168704748
+      Food_22: -1427428971
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
