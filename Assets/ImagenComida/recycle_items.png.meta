@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recycle_items_4
+      name: Diario
       rect:
         serializedVersion: 2
         x: 151
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recycle_items_6
+      name: BotellaGaseosa
       rect:
         serializedVersion: 2
         x: 243
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: recycle_items_11
+      name: LataGaseosa
       rect:
         serializedVersion: 2
         x: 353
@@ -468,16 +468,16 @@ TextureImporter:
       recycle_items_7: -2129229034
       recycle_items_10: 160177165
       BolsaDePapel: 1252587070
-      recycle_items_6: -237343587
-      recycle_items_11: -914784727
       recycle_items_12: -482749034
       recycle_items_2: 920230796
       recycle_items_8: 1369422775
+      BotellaGaseosa: -237343587
       recycle_items_13: 301206
+      LataGaseosa: -914784727
       recycle_items_14: -629692800
       recycle_items_3: -1269399999
-      recycle_items_4: 560424561
       recycle_items_9: 729071647
+      Diario: 560424561
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
