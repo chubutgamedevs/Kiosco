@@ -87,7 +87,7 @@ public class CompraNpc : MonoBehaviour
 
         //El NPC sabe el dinero que tiene que recibir como vuelto 
         vuelto = ObtenerVuelto(valorPre, pago);
-        pm.darVuelto(pago);
+        pm.DarVuelto(pago);
         Debug.Log(string.Join(" ", vuelto, "Este Es el vuelto"));
     }
 

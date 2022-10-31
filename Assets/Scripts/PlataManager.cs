@@ -8,7 +8,8 @@ public class PlataManager : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] GameObject moldeBillete;
     [SerializeField] List<Sprite> imgBillete;
-    [SerializeField] Vector3 offsetDelta = new Vector3(1f, -0.5f, -0.1f);
+
+    [SerializeField] Vector3 offsetDelta = new Vector3(3f, -0.5f, -0.1f);
 
     public static int valorToIndice(int valor)
     {
@@ -25,7 +26,7 @@ public class PlataManager : MonoBehaviour
         }
     }
 
-    public void darVuelto(List<int> vuelto)
+    public void DarVuelto(List<int> vuelto)
     {
         Vector3 offset = Vector3.zero;
 

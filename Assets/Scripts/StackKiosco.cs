@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StackKiosco : MonoBehaviour
 {
+    [SerializeField] PlataManager caja;
     public Dictionary<ItemData, InventoryItem> _itemDictionary;
     public List<InventoryItem> inventKiosco;
     public static StackKiosco Instance;
@@ -46,7 +47,7 @@ public class StackKiosco : MonoBehaviour
             }
         }
     }
-    private List<int> dineroInicial = new List<int>
+    /*private List<int> dineroInicial = new List<int>
     {1,2,5,10,20,50,100};
     List<int> ObternerDinero(List<int> DineroRandom, int count)
     {
@@ -57,12 +58,12 @@ public class StackKiosco : MonoBehaviour
             caja.Add(DineroRandom[indiceRandom]);
         }
         return caja;
-    }
+    }*/
     private void Start()
     {
-        var cajaDelDia = ObternerDinero(dineroInicial, 15);
-        Debug.Log(string.Join(" ,", cajaDelDia));
-        Debug.Log("Dinero De La caja");
+        //var cajaDelDia = ObternerDinero(dineroInicial, 15);
+        //Debug.Log(string.Join(" ,", cajaDelDia));
+       // Debug.Log("Dinero De La caja");
     }
 
 }
