@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+
+public class Constantes
+{
+    public static float tiempoDeIdaBillete = 1f;
+}
 public class Billete : MonoBehaviour
 {
 
@@ -9,21 +14,18 @@ public class Billete : MonoBehaviour
     [SerializeField] Transform vuelto;
     public Transform move;
     bool original = true;
-    void Start()
-    {
 
-    }
     private void OnMouseDown()
     {
+        AnunciarBilleteClickeado();
 
         if (original)
         {
             GameObject b = Instantiate(gameObject, vuelto);
             b.GetComponent<Billete>().original = false;
             b.GetComponent<Billete>().destino = transform;
-            b.transform.DOMove(destino.position, 1f);
+            b.transform.DOMove(destino.position, Constantes.tiempoDeIdaBillete).OnComplete(AnunciarBilleteLLegoAVuelto);
 
-            //vuelto.position = new Vector3(1f, 1f, 1f);
         }
         else
         {
@@ -31,9 +33,15 @@ public class Billete : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void AnunciarBilleteLLegoAVuelto()
     {
-
+        EventManager.LlevarBilleteAVuelto(this);
     }
+
+    private void AnunciarBilleteClickeado()
+    {
+        EventManager.ClikearBillete(this.tag);
+    }
+
+
 }
