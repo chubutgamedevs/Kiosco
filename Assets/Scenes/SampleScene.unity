@@ -195,8 +195,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 67611be2cf73fec4b8aa30b1191ca704, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -226,7 +226,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -244,11 +244,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 10067505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &21327316
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,8 +391,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 648baedb2e0298448ac68d6b9b61e74b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -421,7 +422,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -439,11 +440,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 152982387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &313490310
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,8 +518,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4cc94606ff264d147b0f5876d1248a4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -547,7 +549,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -565,11 +567,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 313490310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &331270268
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +742,6 @@ GameObject:
   - component: {fileID: 469268466}
   - component: {fileID: 469268467}
   - component: {fileID: 469268468}
-  - component: {fileID: 469268469}
   - component: {fileID: 469268470}
   m_Layer: 0
   m_Name: billete_1
@@ -832,7 +834,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -841,20 +843,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.048, y: 0.83723974}
   m_EdgeRadius: 0
---- !u!114 &469268469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469268465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
 --- !u!114 &469268470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,6 +1035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741895891}
+  - component: {fileID: 741895892}
   m_Layer: 0
   m_Name: Destino
   m_TagString: Untagged
@@ -1069,6 +1058,18 @@ Transform:
   m_Father: {fileID: 1675793822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741895892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741895890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36831bdf2f38a244c9def2d2ab6cca2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906296247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,8 +1226,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a867f1ccef21f274297dacae7722cf8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1256,7 +1257,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1274,11 +1275,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1130610670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &1161440375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,8 +1353,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 468919ff44d30d844a230b635e625e3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1382,7 +1384,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1400,11 +1402,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1161440375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &1202421792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,8 +1480,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 532804201
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2755140d2b1ce314c902d81de5063ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1508,7 +1511,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.048, y: 2.048}
+    oldSize: {x: 2.2755556, y: 2.2755556}
     newSize: {x: 2.048, y: 2.048}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1526,11 +1529,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202421792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae8ba9bfd914f0448ac53c7c3cc771a, type: 3}
+  m_Script: {fileID: 11500000, guid: 95435f290b766d64b872473d585eb187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  dragEnabled: 0
+  destino: {fileID: 741895891}
+  vuelto: {fileID: 46414139}
+  move: {fileID: 0}
 --- !u!1 &1242455068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2725883795440502666, guid: 80beb99b3352aa9419ff735281b1e2ab, type: 3}
