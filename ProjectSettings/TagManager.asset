@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BIlletes
+  - billete_1
+  - billete_2
+  - billete_5
+  - billete_10
+  - billete_20
+  - billete_50
+  - billete_100
   layers:
   - Default
   - TransparentFX
