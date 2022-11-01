@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_LataGas
   itemNombre: LataGaseosa
-  precio: 135
-  icon: {fileID: 0}
-  itemPrefab: {fileID: 0}
+  precio: 1
+  icon: {fileID: -914784727, guid: ebd4199d1bebacb438fa93a349b118ea, type: 3}
+  itemPrefab: {fileID: 5855800069133861565, guid: 83a54809b87a0a741aa59e33a8c7d056, type: 3}

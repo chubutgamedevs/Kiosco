@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Paleta
   itemNombre: PaletaHelada
-  precio: 0
-  icon: {fileID: 0}
-  itemPrefab: {fileID: 0}
+  precio: 1
+  icon: {fileID: 21300000, guid: 1052f5fcaee426243849d04fe80f3181, type: 3}
+  itemPrefab: {fileID: 230623153101976719, guid: 649e82d935ed98249925fa1067ef61e8, type: 3}

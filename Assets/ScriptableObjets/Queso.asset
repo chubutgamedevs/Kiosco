@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Queso
   itemNombre: Queso
-  precio: 50
+  precio: 1
   icon: {fileID: 1470421961, guid: 70dc3ee89a7904f4085198931734ea47, type: 3}
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 2828911925264721861, guid: abd92df4520fd8f42b8127a8d67baa5c, type: 3}

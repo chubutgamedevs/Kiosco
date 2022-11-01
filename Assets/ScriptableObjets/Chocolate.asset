@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Chocolate
   itemNombre: Chocolate
-  precio: 119
+  precio: 1
   icon: {fileID: -62662476, guid: 70dc3ee89a7904f4085198931734ea47, type: 3}
   itemPrefab: {fileID: 2725883795440502666, guid: 80beb99b3352aa9419ff735281b1e2ab, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Leche
   itemNombre: Leche
-  precio: 113
+  precio: 1
   icon: {fileID: -1963811584, guid: ebd4199d1bebacb438fa93a349b118ea, type: 3}
   itemPrefab: {fileID: 0}
