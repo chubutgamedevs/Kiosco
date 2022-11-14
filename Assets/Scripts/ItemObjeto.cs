@@ -10,7 +10,7 @@ public class ItemObjeto : MonoBehaviour
     {
         StackKiosco.Instance.Add(itemData);
     }
-    private void Awake()
+    private void Start()
     {
         AgregarObjetos();
     }

@@ -16,4 +16,4 @@ MonoBehaviour:
   itemNombre: Diario
   precio: 8
   icon: {fileID: 560424561, guid: ebd4199d1bebacb438fa93a349b118ea, type: 3}
-  itemPrefab: {fileID: 6669985365835592850, guid: 6c0fe7602853a9945b06deb9c0fe5878, type: 3}
+  itemPrefab: {fileID: 0}

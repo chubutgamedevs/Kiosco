@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: recycle_items_0
+      name: Agua
       rect:
         serializedVersion: 2
         x: 2
@@ -462,7 +462,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      recycle_items_0: 1182695955
       recycle_items_15: -1208593676
       BidonLeche: -1963811584
       recycle_items_7: -2129229034
@@ -471,6 +470,7 @@ TextureImporter:
       recycle_items_12: -482749034
       recycle_items_2: 920230796
       recycle_items_8: 1369422775
+      Agua: 1182695955
       BotellaGaseosa: -237343587
       recycle_items_13: 301206
       LataGaseosa: -914784727
