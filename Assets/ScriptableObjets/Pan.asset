@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Pan
   itemNombre: Pan
-  precio: 1
+  precio: 5
   icon: {fileID: -205102395, guid: 70dc3ee89a7904f4085198931734ea47, type: 3}
   itemPrefab: {fileID: 4867140053789889158, guid: 458295fc4aa216c46810b05eebb157b3, type: 3}

@@ -91,7 +91,6 @@ public class CompraNpc : MonoBehaviour
         Debug.Log(string.Join(" ", vuelto, "Este Es el vuelto"));
     }
 
-
     private void Start()
     {
         Llevo();
