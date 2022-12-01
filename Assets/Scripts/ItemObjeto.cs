@@ -6,16 +6,17 @@ using TMPro;
 public class ItemObjeto : MonoBehaviour
 {
     public ItemData itemData;
-    public GameObject itemPrecio;
+    [SerializeField] private TextMeshPro itemPrecio;
     public void AgregarObjetos()
     {
         StackKiosco.Instance.Add(itemData);
     }
     private void Start()
     {
+        itemPrecio.text = string.Join(" ", itemData.precio);
+        GetComponent<SpriteRenderer>().sprite = itemData.icon;
+
         AgregarObjetos();
-        string s = string.Join(" ", itemData.precio);
-        GetComponentInChildren<TextMeshPro>().text = s;
     }
 
 

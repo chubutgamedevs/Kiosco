@@ -12,8 +12,9 @@ public class CompraNpc : MonoBehaviour
     public int totalBilletera;
     public int valorPre;
     public int vuelto;
-
-    public List<InventoryItem> estante;
+    [SerializeField] SpriteRenderer globoImg;
+    [SerializeField] Vector3 destino = new Vector3(0f, 0f, 0f);
+    //public List<InventoryItem> estante;
     private List<int> ListDinero = new List<int>
     {1,2,5,10,20,50,100};
     List<int> ObternerDinero(List<int> DineroRandom, int count)
@@ -72,6 +73,7 @@ public class CompraNpc : MonoBehaviour
             s = string.Join(" ", item.data.itemNombre);
             p = string.Join(" ", item.data.precio);
             valorPre = item.data.precio;
+            globoImg.sprite = item.data.icon;
         }
         Debug.Log(string.Join("", " voy a llevar ", s, " Precio ", p));
         Debug.Log(string.Join(" ", "Billetera Npc "));
@@ -93,13 +95,10 @@ public class CompraNpc : MonoBehaviour
 
     private void Start()
     {
+       
         Llevo();
     }
 
-    void Update()
-    {
-
-    }
 
 
 }

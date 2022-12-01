@@ -47,23 +47,9 @@ public class StackKiosco : MonoBehaviour
             }
         }
     }
-    /*private List<int> dineroInicial = new List<int>
-    {1,2,5,10,20,50,100};
-    List<int> ObternerDinero(List<int> DineroRandom, int count)
-    {
-        List<int> caja = new List<int>();
-        for (int i = 0; i < count; i++)
-        {
-            int indiceRandom = Random.Range(0, DineroRandom.Count);
-            caja.Add(DineroRandom[indiceRandom]);
-        }
-        return caja;
-    }*/
     private void Start()
     {
-        //var cajaDelDia = ObternerDinero(dineroInicial, 15);
-        //Debug.Log(string.Join(" ,", cajaDelDia));
-       // Debug.Log("Dinero De La caja");
+    
     }
 
 }

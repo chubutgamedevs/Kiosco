@@ -9,8 +9,8 @@ public class PlataManager : MonoBehaviour
     [SerializeField] GameObject moldeBillete;
     [SerializeField] List<Sprite> imgBillete;
 
-    [SerializeField] Vector3 offsetDelta = new Vector3(3f, -0.5f, -0.1f);
-
+    private Vector3 offsetDelta = new Vector3(0f, 0f, 0f);
+    [SerializeField] Vector3 offset = new Vector3(0f, 0f, 0f);
     public static int valorToIndice(int valor)
     {
         switch (valor)
@@ -28,8 +28,8 @@ public class PlataManager : MonoBehaviour
 
     public void DarVuelto(List<int> vuelto)
     {
-        Vector3 offset = Vector3.zero;
-
+        //Vector3 offset = Vector3.zero;
+        //Vector3 offset = new Vector3(0f, 0f, 0f);
         Sequence s = DOTween.Sequence();
         foreach (var billete in vuelto)
         {
