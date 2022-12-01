@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 174377092}
   - component: {fileID: 174377093}
   m_Layer: 0
-  m_Name: GloboImgB (1)
+  m_Name: 'GloboImgB '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,11 +473,12 @@ Transform:
   m_GameObject: {fileID: 174377090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.29000008, y: 1.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1761795754}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &174377092
 SpriteRenderer:
@@ -544,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globoImg: {fileID: 174377091}
-  destino: {x: 0, y: 0, z: 0}
+  tamanio: {x: 1, y: 1, z: 1}
 --- !u!1001 &211974960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -800,7 +801,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a867f1ccef21f274297dacae7722cf8c, type: 3}
   - {fileID: 21300000, guid: 67611be2cf73fec4b8aa30b1191ca704, type: 3}
   - {fileID: 21300000, guid: 2755140d2b1ce314c902d81de5063ea6, type: 3}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: -0.12, y: -2.58, z: 0}
 --- !u!4 &424382935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -1935,6 +1936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217833900}
   - component: {fileID: 1217833899}
+  - component: {fileID: 1217833901}
   m_Layer: 0
   m_Name: Dejar
   m_TagString: Untagged
@@ -2009,6 +2011,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217833901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217833898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcbb22828d40f4489086139815f12a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1221619453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2384,6 +2398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761795754}
   - component: {fileID: 1761795753}
+  - component: {fileID: 1761795755}
   m_Layer: 0
   m_Name: Llevo
   m_TagString: Untagged
@@ -2451,13 +2466,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761795751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29000008, y: 2.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 174377091}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761795755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761795751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7f5cb8e94710142a54a98fbfe1ac01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globoImg: {fileID: 1761795754}
+  tamanio: {x: 1, y: 1, z: 1}
 --- !u!1 &1817799515
 GameObject:
   m_ObjectHideFlags: 0
