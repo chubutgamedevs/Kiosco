@@ -7,11 +7,13 @@ using DG.Tweening;
 public class CompraNpc : MonoBehaviour
 {
     [SerializeField] PlataManager pm;
-    public StackKiosco listaItems;
+    //public StackKiosco listaItems;
     private List<int> BilleteraRandom;
     public int totalBilletera;
     public int valorPre;
     public int vuelto;
+    //public List<InventoryItem> newitem;
+    public InventoryItem item;
     [SerializeField] SpriteRenderer globoImg;
     [SerializeField] Vector3 destino = new Vector3(0f, 0f, 0f);
     //public List<InventoryItem> estante;
@@ -49,7 +51,7 @@ public class CompraNpc : MonoBehaviour
         return totalPago - valorPre;
 
     }
-    public List<int> Pagar(int precio)
+    public List<int> ListPagar(int precio)
     {
         BilleteraRandom = BilleteraRandom.OrderByDescending(x => x).ToList(); ;
         Debug.Log(string.Join(" ", BilleteraRandom));
@@ -63,18 +65,19 @@ public class CompraNpc : MonoBehaviour
         }
         return pago;
     }
-    public void Llevo()
+    public void Pedir()
     {
         var newitem = QuieroItem(StackKiosco.Instance.inventKiosco, 1);
         string s = "";
         string p = "";
-        foreach (var item in newitem)
-        {
-            s = string.Join(" ", item.data.itemNombre);
-            p = string.Join(" ", item.data.precio);
-            valorPre = item.data.precio;
-            globoImg.sprite = item.data.icon;
-        }
+        item = newitem[0];
+
+        s = string.Join(" ", item.data.itemNombre);
+        p = string.Join(" ", item.data.precio);
+        valorPre = item.data.precio;
+        globoImg.sprite = item.data.icon;
+
+
         Debug.Log(string.Join("", " voy a llevar ", s, " Precio ", p));
         Debug.Log(string.Join(" ", "Billetera Npc "));
         BilleteraRandom = ObternerDinero(ListDinero, 4);
@@ -85,18 +88,32 @@ public class CompraNpc : MonoBehaviour
             totalBilletera += BilleteraRandom[i];
         }
 
-        List<int> pago = Pagar(valorPre);
+        List<int> pago = ListPagar(valorPre);
+
+        EventManager.LLegaCliente(this);
+    }
+
+    public void Pagar()
+    {
+        List<int> pago = ListPagar(valorPre);
 
         //El NPC sabe el dinero que tiene que recibir como vuelto 
         vuelto = ObtenerVuelto(valorPre, pago);
-        pm.DarVuelto(pago);
+        pm.DarPago(pago);
         Debug.Log(string.Join(" ", vuelto, "Este Es el vuelto"));
+
     }
 
+    public void llevo(GameObject item)
+    {
+
+
+        Destroy(item.gameObject);
+
+    }
     private void Start()
     {
-       
-        Llevo();
+        Pedir();
     }
 
 

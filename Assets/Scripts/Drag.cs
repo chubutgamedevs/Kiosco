@@ -9,6 +9,7 @@ public class Drag : MonoBehaviour
     public Camera cam;
     private Vector3 origin;
     public bool dragEnabled;
+    public GameObject mismObjeto;
     [SerializeField] Transform target;
     [SerializeField] float snap = 0.1f;
     void Awake()
@@ -36,9 +37,10 @@ public class Drag : MonoBehaviour
         target.gameObject.SetActive(false);
         if (Vector3.Distance(target.position, transform.position) < snap)
         {
-
             transform.position = target.position;
 
+            //EventManager.ObjetoDropeado(this.gameObject.GetComponent<ItemObjeto>().itemData);
+            EventManager.ObjetoDropeado(this.gameObject);
         }
         else
         {

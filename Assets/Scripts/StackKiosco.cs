@@ -28,7 +28,7 @@ public class StackKiosco : MonoBehaviour
         }
         else //agrego el item al stack en caso de que no este
         {
-            Debug.Log("agrego nuevo item");
+            //            Debug.Log("agrego nuevo item");
             InventoryItem newItem = new InventoryItem(itemData);
             inventKiosco.Add(newItem);
             _itemDictionary.Add(itemData, newItem);
@@ -49,7 +49,7 @@ public class StackKiosco : MonoBehaviour
     }
     private void Start()
     {
-    
+
     }
 
 }

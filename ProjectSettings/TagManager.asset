@@ -12,6 +12,15 @@ TagManager:
   - billete_20
   - billete_50
   - billete_100
+  - Pan
+  - Leche
+  - Chocolate
+  - Queso
+  - PaletaHelada
+  - Huevo
+  - LataGaseosa
+  - Diario
+  - Agua
   layers:
   - Default
   - TransparentFX

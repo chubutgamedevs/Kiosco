@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class VerificarItem : MonoBehaviour
 {
-    
+    [SerializeField] GameObject contralador;
 
 
 
 
-    
+
     void Start()
     {
-        
+
     }
 
 }

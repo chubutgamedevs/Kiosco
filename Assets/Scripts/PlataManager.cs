@@ -26,7 +26,9 @@ public class PlataManager : MonoBehaviour
         }
     }
 
-    public void DarVuelto(List<int> vuelto)
+
+
+    public void DarPago(List<int> vuelto)
     {
         //Vector3 offset = Vector3.zero;
         //Vector3 offset = new Vector3(0f, 0f, 0f);
@@ -38,7 +40,16 @@ public class PlataManager : MonoBehaviour
             s.Append(b.transform.DOMove(offset, 1f));
             offset += offsetDelta;
         }
+
     }
+    public void RecibeVuelto()
+    {
+         EventManager.LlevarBilleteAVuelto();
+    }
+
+
+
+
 
 
 }

@@ -565,6 +565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Queso
       objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
+      value: Queso
+      objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -824,6 +828,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: Agua
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: Agua
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -1106,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chocolate
       objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
+      value: Chocolate
+      objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1232,6 +1244,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: Leche
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: Leche
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -1493,6 +1509,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: Pan
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: Pan
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -1937,6 +1957,7 @@ GameObject:
   - component: {fileID: 1217833900}
   - component: {fileID: 1217833899}
   - component: {fileID: 1217833901}
+  - component: {fileID: 1217833902}
   m_Layer: 0
   m_Name: Dejar
   m_TagString: Untagged
@@ -2004,7 +2025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217833898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.29, y: -2.69, z: 0}
+  m_LocalPosition: {x: -1.91, y: -2.57, z: 0}
   m_LocalScale: {x: 1, y: 1.1768, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2023,6 +2044,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fcbb22828d40f4489086139815f12a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contralador: {fileID: 1217833898}
+--- !u!58 &1217833902
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217833898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09927851, y: -0.09279929}
+  serializedVersion: 2
+  m_Radius: 0.49156362
 --- !u!1001 &1221619453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2040,6 +2078,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: PaletaHelada
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: PaletaHelada
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -2092,6 +2134,51 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 900c9b60a0b83ff48a101df9e86e0a84, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+--- !u!1 &1260364830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1260364832}
+  - component: {fileID: 1260364831}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1260364831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260364830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f458ab7b0529042bfb584a9d5e5c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs: {fileID: 0}
+--- !u!4 &1260364832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260364830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1263152068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -2114,6 +2201,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: Huevo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: Huevo
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -2183,6 +2274,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: LataGaseosa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: LataGaseosa
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
@@ -2315,10 +2410,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 411714279}
-  listaItems: {fileID: 0}
   totalBilletera: 0
   valorPre: 0
   vuelto: 0
+  item:
+    data: {fileID: 0}
+    stackSize: 0
   globoImg: {fileID: 1761795753}
   destino: {x: 0, y: 0, z: 0}
 --- !u!212 &1696858943
@@ -2466,7 +2563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761795751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2572,6 +2669,10 @@ PrefabInstance:
       objectReference: {fileID: 989425590}
     - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
       propertyPath: m_Name
+      value: Diario
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418284547312325225, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
+      propertyPath: m_TagString
       value: Diario
       objectReference: {fileID: 0}
     - target: {fileID: 9210949408950557081, guid: ff81af76fee91014bb3b8167d20bec61, type: 3}
