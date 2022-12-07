@@ -44,7 +44,7 @@ public class PlataManager : MonoBehaviour
     }
     public void RecibeVuelto()
     {
-         EventManager.LlevarBilleteAVuelto();
+         //EventManager.LlevarBilleteAVuelto();
     }
 
 
