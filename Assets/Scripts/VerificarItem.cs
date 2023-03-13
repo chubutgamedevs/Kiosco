@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VerificarItem : MonoBehaviour
 {
-    [SerializeField] GameObject contralador;
+    [SerializeField] GameObject controlador;
 
 
 

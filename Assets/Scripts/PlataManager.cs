@@ -11,6 +11,7 @@ public class PlataManager : MonoBehaviour
 
     private Vector3 offsetDelta = new Vector3(0f, 0f, 0f);
     [SerializeField] Vector3 offset = new Vector3(0f, 0f, 0f);
+    
     public static int valorToIndice(int valor)
     {
         switch (valor)
@@ -42,10 +43,7 @@ public class PlataManager : MonoBehaviour
         }
 
     }
-    public void RecibeVuelto()
-    {
-         EventManager.LlevarBilleteAVuelto();
-    }
+   
 
 
 

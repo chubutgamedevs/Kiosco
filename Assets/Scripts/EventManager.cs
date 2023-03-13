@@ -6,10 +6,11 @@ public class EventManager : MonoBehaviour
 {
     #region eventos de billete
     public static event System.Action<string> OnBilleteClikeado = delegate { };
-    public static event System.Action<Billete> OnBilleteLLevadoAVuelto = delegate { };
+    public static event System.Action<List<Billete>> OnBilleteLLevadoAVuelto = delegate { };
     public static event System.Action<GameObject> OnObjetoDropeado = delegate { };
     public static event System.Action<CompraNpc> OnLLegaCliente = delegate { };
-    //public static event System.Action<CompraNpc> OnLLegaCliente = delegate { };
+    public static event System.Action<Billete> OnBilleteQuitadoDeVuelto = delegate { };
+    public static event System.Action<List<Billete>> OnEntregarVuelto = delegate { };
 
     #endregion
 
@@ -19,11 +20,6 @@ public class EventManager : MonoBehaviour
         OnBilleteClikeado(billete);
     }
 
-    public static void LlevarBilleteAVuelto(Billete billete)
-    {
-        // Debug.Log("LlevarBilleteAVuelto");
-        OnBilleteLLevadoAVuelto(billete);
-    }
     public static void ObjetoDropeado(GameObject item)
     {
         //Debug.Log("objetoDRopeado");
@@ -34,6 +30,18 @@ public class EventManager : MonoBehaviour
     {
         //Debug.Log("LLegaCliente");
         OnLLegaCliente(cliente);
-
+    }
+    public static void BilleteQuitadoDeVuelto(Billete billete)
+    {
+        OnBilleteQuitadoDeVuelto(billete);
+    }
+    public static void LlevarBilleteAVuelto(List<Billete> Listbilletes)
+    {
+        // Debug.Log("LlevarBilleteAVuelto");
+        OnBilleteLLevadoAVuelto(Listbilletes);
+    }
+    public static void EntregarVuelto(List<Billete> billetes)
+    {
+        OnEntregarVuelto(billetes);
     }
 }

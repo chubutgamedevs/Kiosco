@@ -14,7 +14,7 @@ public class Billete : MonoBehaviour
     [SerializeField] Transform vuelto;
     public Transform move;
     bool original = true;
-
+    public int valor;
     private void OnMouseDown()
     {
         AnunciarBilleteClickeado();
@@ -29,13 +29,17 @@ public class Billete : MonoBehaviour
         }
         else
         {
+            EventManager.BilleteQuitadoDeVuelto(this);
             transform.DOMove(destino.position, 1f).OnComplete(() => Destroy(this.gameObject));
+
         }
     }
 
     private void AnunciarBilleteLLegoAVuelto()
     {
-        EventManager.LlevarBilleteAVuelto(this);
+        List<Billete> vuelto = new List<Billete>();
+        vuelto.Add(this);
+        EventManager.LlevarBilleteAVuelto(vuelto);
     }
 
     private void AnunciarBilleteClickeado()
@@ -44,4 +48,9 @@ public class Billete : MonoBehaviour
     }
 
 
+    private void Awake()
+    {
+        valor = int.Parse(tag.Split("_")[1]);
+        Debug.Log(valor);
+    }
 }
