@@ -106,15 +106,17 @@ public class CompraNpc : MonoBehaviour
 
     public void llevo(GameObject item)
     {
-
-
         Destroy(item.gameObject);
-
     }
+
+    
     private void Start()
     {
         Pedir();
     }
+
+
+
 
 
 

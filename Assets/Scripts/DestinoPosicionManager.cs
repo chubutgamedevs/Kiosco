@@ -25,17 +25,12 @@ public class DestinoPosicionManager : MonoBehaviour
     #endregion eventos  
 
     #region ciclo de vida
-    // Start is called before the first frame update
+
     void Start()
     {
         posicionInicial = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     #endregion
 
     #region metodos
@@ -46,9 +41,9 @@ public class DestinoPosicionManager : MonoBehaviour
 
         float xBillete = (cantBilletesActual % cantBilletesPorFila) * xOffset;
         float yBillete = Mathf.Round(cantBilletesActual / cantBilletesPorFila) * yOffset;
-        float ZBillete = -(xBillete + yBillete*2) / 10;
+        float ZBillete = -(xBillete + yBillete * 2) / 10;
 
-        Vector3 nuevaPosicion = posicionInicial + new Vector3(xBillete,yBillete ,ZBillete);
+        Vector3 nuevaPosicion = posicionInicial + new Vector3(xBillete, yBillete, ZBillete);
         this.transform.position = nuevaPosicion;
     }
 

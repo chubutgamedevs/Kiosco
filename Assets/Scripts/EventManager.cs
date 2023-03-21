@@ -10,8 +10,8 @@ public class EventManager : MonoBehaviour
     public static event System.Action<GameObject> OnObjetoDropeado = delegate { };
     public static event System.Action<CompraNpc> OnLLegaCliente = delegate { };
     public static event System.Action<Billete> OnBilleteQuitadoDeVuelto = delegate { };
-    public static event System.Action<List<Billete>> OnEntregarVuelto = delegate { };
-
+    public static event System.Action<Billete> OnEntregarVuelto = delegate { };
+    //public static event System.Action<List<Billete>> OnEntregarVuelto = delegate { };
     #endregion
 
     public static void ClikearBillete(string billete)
@@ -40,8 +40,11 @@ public class EventManager : MonoBehaviour
         // Debug.Log("LlevarBilleteAVuelto");
         OnBilleteLLevadoAVuelto(Listbilletes);
     }
-    public static void EntregarVuelto(List<Billete> billetes)
+    public static void EntregarVuelto(Billete billetes)//cambiar nombre de la funcion
     {
         OnEntregarVuelto(billetes);
     }
+
+
+
 }
