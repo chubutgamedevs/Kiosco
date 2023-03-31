@@ -7,12 +7,12 @@ using DG.Tweening;
 public class CompraNpc : MonoBehaviour
 {
     [SerializeField] PlataManager pm;
-    //public StackKiosco listaItems;
+
     private List<int> BilleteraRandom;
     public int totalBilletera;
     public int valorPre;
     public int vuelto;
-    //public List<InventoryItem> newitem;
+    
     public InventoryItem item;
     [SerializeField] SpriteRenderer globoImg;
     [SerializeField] Vector3 destino = new Vector3(0f, 0f, 0f);
@@ -32,7 +32,7 @@ public class CompraNpc : MonoBehaviour
     List<InventoryItem> QuieroItem(List<InventoryItem> itemRandom, int count)
     {
         List<InventoryItem> llevar = new List<InventoryItem>();
-        //Debug.Log(itemRandom.Count);
+       
         for (int i = 0; i < count; i++)
         {
             int indiceRnd = Random.Range(0, itemRandom.Count);
@@ -109,7 +109,7 @@ public class CompraNpc : MonoBehaviour
         Destroy(item.gameObject);
     }
 
-    
+
     private void Start()
     {
         Pedir();

@@ -28,9 +28,9 @@ public class Billete : MonoBehaviour
             bi.destino = transform;
             b.transform.DOMove(destino.position, Constantes.tiempoDeIdaBillete).OnComplete(AnunciarBilleteLLegoAVuelto);
 
-            List<Billete> v = new List<Billete>();
-            v.Add(bi);
-            EventManager.LlevarBilleteAVuelto(v);
+            List<Billete> listVuelto = new List<Billete>();
+            listVuelto.Add(bi);
+            EventManager.LlevarBilleteAVuelto(listVuelto);
         }
         else
         {

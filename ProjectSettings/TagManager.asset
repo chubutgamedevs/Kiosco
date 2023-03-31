@@ -21,6 +21,15 @@ TagManager:
   - LataGaseosa
   - Diario
   - Agua
+  - AceiteOliva
+  - Barbacoa
+  - Escabeche
+  - SalsaTomate
+  - SalsaPicante
+  - Mayonesa
+  - Ketchup
+  - JugoNaranja
+  - JugoUva
   layers:
   - Default
   - TransparentFX
